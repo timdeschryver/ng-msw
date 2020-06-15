@@ -1,0 +1,64 @@
+{
+  "name": "ng-msw",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "test:jest": "jest --testRegex=\"(/__tests__/.*|(\\.|/)(jestspec))\\.[jt]sx?$\" --env=jest-environment-jsdom-sixteen",
+    "lint": "ng lint",
+    "e2e": "cypress open"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~10.0.0-rc.4",
+    "@angular/common": "~10.0.0-rc.4",
+    "@angular/compiler": "~10.0.0-rc.4",
+    "@angular/core": "~10.0.0-rc.4",
+    "@angular/forms": "~10.0.0-rc.4",
+    "@angular/platform-browser": "~10.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "~10.0.0-rc.4",
+    "@angular/router": "~10.0.0-rc.4",
+    "@testing-library/cypress": "^6.0.0",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1000.0-rc.3",
+    "@angular/cli": "~10.0.0-rc.3",
+    "@angular/compiler-cli": "~10.0.0-rc.4",
+    "@testing-library/angular": "^9.3.1",
+    "@testing-library/dom": "^7.15.1",
+    "@testing-library/user-event": "^11.4.2",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.13",
+    "codelyzer": "^6.0.0-next.1",
+    "cypress": "^4.8.0",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "jest": "^26.0.1",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-preset-angular": "^8.2.0",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~3.3.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "msw": "^0.19.3",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.9.5"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupJest.ts"
+    ],
+    "testEnvironment": "jest-environment-jsdom-sixteen"
+  }
+}
